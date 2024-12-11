@@ -116,6 +116,10 @@ body.lightMode .contato textarea {
     background-color: #b3a3a3;
 }
 
+body.lightMode .menu {
+    background-color: var(--fontcolor);
+}
+
 .menu-mobile {
     display: none;
     border: 2px solid var(--fontcolor);
