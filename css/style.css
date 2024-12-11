@@ -99,7 +99,7 @@ nav {
 /* Estilizando sessão de apresentação */
 .apresentacao {
     color: var(--fontcolor);
-    margin: 140px auto;
+    margin: 120px auto;
     padding: 0 3%;
     justify-content: space-between;
     gap: 20px;
@@ -326,7 +326,6 @@ form {
 }
 
 .form-item {
-    flex-direction: column;
     position: relative;
     width: 100%;
 }
@@ -334,24 +333,30 @@ form {
 .form-item>label {
     position: absolute;
     left: 20px;
-    bottom: 9px;
+    bottom: 13px;
     padding: 0px 5px;
     transition: 0.3s;
     pointer-events: none;
     background: #000;
     cursor: pointer;
-    ;
 }
 
 .form-item>input,
 textarea {
-    padding: 8px 10px 8px 20px;
+    padding: 12px 10px 12px 20px;
     width: 100%;
     color: var(--fontcolor);
     border: 2px solid var(--fontcolor);
     border-radius: 6px;
     background-color: #000;
     outline: none;
+}
+
+.input-text:focus+label,
+.input-text:valid+label {
+    bottom: 37px;
+    font-size: 14px;
+    color: rgb(143, 5, 143);
 }
 
 textarea {
@@ -367,12 +372,6 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px #000 inset !important;
     -webkit-text-fill-color: var(--fontcolor) !important;
-}
-
-.form-item:focus-within>label,
-.form-item>input:valid+label {
-    bottom: 27px;
-    font-size: 13px;
 }
 
 .custom-button {
@@ -479,7 +478,7 @@ footer>p {
         z-index: 100000;
         visibility: hidden;
         overflow: hidden;
-        transition: 0.4s ease-in-out;
+        transition: 0.5s ease-in-out;
     }
 
     .menu>ul {
